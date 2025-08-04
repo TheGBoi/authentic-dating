@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "MindMatch",
+    "slug": "mindmatch",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#6C63FF"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mindmatch.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to take profile photos and video messages",
+        "NSMicrophoneUsageDescription": "This app uses the microphone for voice messages and video calls",
+        "NSLocationWhenInUseUsageDescription": "This app uses location to find matches nearby"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#6C63FF"
+      },
+      "package": "com.mindmatch.app",
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-av",
+      "expo-location"
+    ]
+  }
+}
